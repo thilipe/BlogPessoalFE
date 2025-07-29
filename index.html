@@ -1,80 +1,102 @@
-<!--
+<!DOCTYPE html>
+<html lang="pt-br">
 
-Felipe Alves Ferreira - RGM: 28805445
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Portfólio - Felipe Alves Ferreira</title>
+	<link rel="stylesheet" href="css/main.css" />
+	
+</head>
 
-Gabriel Sanches - RGM: 29052190
+<body>
 
--->
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Site </title>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" href="css/main.css" />
-	</head>
-	<body>
-		<div>
+	<!-- Cabeçalho -->
+	<div id="header-wrapper">
+		<header id="header" class="container">
+			<nav id="nav">
+				<ul>
+					<li class="current"><a href="index.html">Sobre mim</a></li>
+					<li><a href="Projeto.html">Projetos</a></li>
+					<li><a href="Contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
 
-			<!-- Header -->
-				<div id="header-wrapper">
-					<header id="header" class="container">
-						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li class="current"><a href="index.html">Sobre mim</a></li>
-									<li><a href="Projeto.html">Projetos</a></li>
-									<li><a href="Contato.html">Contato</a></li>
-								</ul>
-							</nav>
+	<!-- Seção principal -->
+	<main id="banner-wrapper">
+		<section class="box container">
+			<div class="perfil-box">
 
-					</header>
+				<!-- Foto -->
+				<div id="logo">
+					<img src="imagem/Felipe.jpg" alt="Foto de Felipe Alves Ferreira">
 				</div>
+
+				<!-- Informações -->
+				<div class="perfil-conteudo">
+					<h2>Felipe Alves Ferreira da Cruz</h2>
+					<p class="subtitle">Analista Desenvolvedor Full Stack</p>
+
+					<h3>Sobre mim</h3>
+					<p class="descricao">
+						Sou desenvolvedor de software com forte atuação em soluções corporativas. Além da tecnologia,
+						também sou apaixonado por música e toco viola clássica.
+					</p>
+
+					<h3>Formação</h3>
+					<ul class="formacao">
+						<li>Técnico de Informática – Senac Santo André</li>
+						<li>Análise e Desenvolvimento de Sistemas – Universidade Cruzeiro do Sul</li>
+					</ul>
+
+					<h3>Cursos</h3>
+					<ul class="cursos">
+						<li>Fundamentos da Robótica Industrial - SENAI Almirante Tamandaré</li>
+					</ul>
+
+					<h3>Qualificações Técnicas</h3>
+					<ul class="skills">
+						<li>✅ Programação em Java e PHP</li>
+						<li>✅ Front-end com HTML e CSS</li>
+						<li>✅ Certificação Sênior em Genexus 16 e 18</li>
+						<li>✅ Desenvolvimento Web e Mobile com Genexus</li>
+						<li>✅ Domínio do WorkWithPlus</li>
+						<li>✅ Sistemas low-code com Bubble</li>
+						<li>✅ Banco de dados: SQL Server, MySQL, Oracle e PostgreSQL</li>
+						<li>✅ Utilização de IA para desenvolvimento e automação</li>
+						<li>✅ Integrações e automações com n8n</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Rodapé -->
+	<footer>
+		<div class="container">
+			<p>&copy; <span id="ano"></span> Felipe Alves Ferreira</p>
+
+			<!-- Redes sociais -->
+			<div class="social-icons">
+				<a href="https://github.com/thilipe" target="_blank" aria-label="GitHub">
+					<img src="imagem/github.png" alt="GitHub" width="40" height="40">
+				</a>
 				<br>
-			<!-- inicio -->
-				<div id="banner-wrapper">
-					<div id="banner" class="box container">
-						<div id="logo">
-							<img src="imagem/Felipe.jpg" alt="" width="250px" height="250px">
-						</div>
-						<div class="row">
-							<div>
-								<h2>Felipe Alves Ferreira da Cruz</h2>
-								<p>Desenvolvedor de Software</p>
-								<br>
-								<h3>Sobre mim: </h3>
-								<p style="font-size: 30px;">A música eu gosto de estudar a música e tocar o meu instrumento, viola clássica</p>
-								<br>
-								<h3>Formação: </h3>
-								<p style="font-size: 30px;" >Técnico de Informática – Senac Santo André </p><br><p style="font-size: 30px;">Análise e Desenvolvimento de Sistema – Universidade Cruzeiro do Sul</p>
-								<br>
-								<h3>Curso: </h3>
-								<p style="font-size: 30px;">FUNDAMENTOS DA ROBÓTICA INDUSTRIAL </p>
-								<br>
-							</div>
-						</div>
-						<br>
-					</div>
-				</div>
-
-
-				
-					<div class="row">
-						<div class="col-12">
-							<div id="copyright">
-								<ul class="menu" style="color: black">
-									<li>&copy; Desenvolvedor: </li>
-									<br>
-									<li>&copy; Felipe Alves Ferreira - RGM: 28805445</li>
-									<br>
-									<li></li>
-									<a href="https://github.com/thilipe" target="_blank"><img src="imagem/github.png" alt="" width="100px" height="100px"></a>
-								</ul>
-							</div>
-						</div>
-					</div>
-				
+				<a href="https://www.facebook.com/share/1B9RbzioS8/" target="_blank" aria-label="Facebook">
+					<img src="imagem/facebook.png" alt="Facebook" width="40" height="40">
+				</a>
 			</div>
 		</div>
+	</footer>
 
-	</body>
+
+</body>
+
+<script>
+  document.getElementById("ano").textContent = new Date().getFullYear();
+</script>
+
+
 </html>

@@ -1,65 +1,110 @@
-<!--
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projetos - Felipe Alves Ferreira</title>
 
-Felipe Alves Ferreira - RGM: 28805445
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-Gabriel Sanches - RGM: 29052190
+  <!-- Seu CSS -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 
--->
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Site </title>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" href="css/main.css" />
-	</head>
-	<body>
-		<div>
+<body>
 
-			<!-- Header -->
-				<div id="header-wrapper">
-					<header id="header" class="container" >
-						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li><a href="index.html">Sobre mim</a></li>
-									<li class="current"><a href="Projeto.html">Projetos</a></li>
-									<li><a href="Contato.html">Contato</a></li>
-								</ul>
-							</nav>
+	<!-- Cabeçalho -->
+	<div id="header-wrapper">
+		<header id="header" class="container">
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Sobre mim</a></li>
+					<li class="current"><a href="Projeto.html">Projetos</a></li>
+					<li><a href="Contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
 
-					</header>
-				</div>
-				<br>
-			<!-- inicio -->
-			<div id="banner-wrapper">
-				<div id="banner" class="box container">
-					<h2>OneCard</h2>
-					<div style="display: flex; justify-content: center;">
-						<img src="imagem/App.png" width="200px" height="400px">
-					</div>
-					<div class="linha">
-						<div>
-							<h3>One Card (OCSI Soluciones, SA de CV) oferece soluções inovadoras em
-								meios de pagamento e produtos de valor agregado... </h3>
-						</div>
-					</div>
-					<br>
-				</div>
-			</div>
-			<div class="linha">
-				<div class="col-12">
-					<div id="copyright">
-						<ul class="menu" style="color: black">
-							<li>&copy; Desenvolvedor: </li>
-							<br>
-							<li>&copy; Felipe Alves Ferreira - RGM: 28805445</li>
-							<br>
-							<li></li>
-							<a href="https://github.com/thilipe" target="_blank"><img src="imagem/github.png" alt="" width="100px" height="100px"></a>
-						</ul>
-					</div>
-				</div>
-			</div>	
+	<!-- Projetos -->
+	<section class="projeto-container">
+
+		<div class="projeto">
+			<h3>OneCard</h3>
+			<img src="imagem/App.png" alt="App OneCard" class="img-projeto">
+			<p>
+				Aplicativo desenvolvido para gerenciamento de cartões e soluções financeiras inteligentes. Interface
+				intuitiva, recarga de saldo e integração com múltiplos serviços.
+			</p>
+			<a href="https://play.google.com/store/apps/details?id=onecard.example" target="_blank"
+				class="btn-ver-projeto">Ver projeto</a>
 		</div>
-	</body>
+
+		<div class="projeto">
+			<h3>SIParceria</h3>
+			<img src="imagem/siparceria.png" alt="SIParceria" class="img-projeto">
+			<p>
+				Plataforma desenvolvida para gestão de parceiros comerciais com funcionalidades de login, relatórios
+				personalizados e painel administrativo. Desenvolvido com Genexus.
+			</p>
+			<a href="https://siparceria.com.br" target="_blank" class="btn-ver-projeto">Acessar plataforma</a>
+		</div>
+
+		<div class="projeto">
+			<h3>Hengrandeestilo</h3>
+			<img src="imagem/hengrandeestilo.png" alt="Hengrandeestilo" class="img-projeto">
+			<p>
+				Loja online de moda personalizada, com foco em estilo e inovação. Plataforma no-code construída no
+				Bubble com integração de pagamentos e painel de pedidos.
+			</p>
+			<a href="https://hengrandeestilo.com.br" target="_blank" class="btn-ver-projeto">Ver loja</a>
+		</div>
+
+		<div class="projeto">
+			<h3>AGROCRM</h3>
+			<img src="imagem/agrocrm.png" alt="AGROCRM" class="img-projeto">
+			<p>
+				CRM desenvolvido para o setor agro, com foco em relacionamento com o produtor rural. Inclui funil de
+				vendas, agendamentos e análise de produtividade. Backend em Genexus.
+			</p>
+			<a href="#" target="_blank" class="btn-ver-projeto">Ver projeto</a>
+		</div>
+
+		<div class="projeto">
+			<h3>Suprimentos</h3>
+			<img src="imagem/suprimentos.png" alt="Sistema de Suprimentos" class="img-projeto">
+			<p>
+				Sistema de controle de compras, estoques e requisições internas. Integrações com bancos de dados Oracle
+				e processos automatizados via n8n.
+			</p>
+			<a href="#" target="_blank" class="btn-ver-projeto">Ver projeto</a>
+		</div>
+
+	</section>
+
+
+
+	<!-- Rodapé -->
+	<footer>
+		<div class="container">
+			<p>&copy; <span id="ano"></span> Felipe Alves Ferreira</p>
+
+			<!-- Redes sociais -->
+			<div class="social-icons">
+				<a href="https://github.com/thilipe" target="_blank" aria-label="GitHub">
+					<img src="imagem/github.png" alt="GitHub" width="40" height="40">
+				</a>
+				<br>
+				<a href="https://www.facebook.com/share/1B9RbzioS8/" target="_blank" aria-label="Facebook">
+					<img src="imagem/facebook.png" alt="Facebook" width="40" height="40">
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		document.getElementById("ano").textContent = new Date().getFullYear();
+	</script>
+
+</body>
+
 </html>
