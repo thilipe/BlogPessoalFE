@@ -8,6 +8,98 @@
 
 	<!-- Seu CSS -->
 	<link rel="stylesheet" href="css/main.css" />
+	<style>
+		body {
+			margin: 0;
+			font-family: 'Poppins', sans-serif;
+			background: linear-gradient(135deg, #0f172a, #1e293b);
+			color: #fff;
+		}
+
+		.projeto-container {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+			gap: 40px;
+			padding: 60px 8%;
+		}
+
+		.projeto {
+			background: rgba(255, 255, 255, 0.05);
+			backdrop-filter: blur(10px);
+			border-radius: 18px;
+			padding: 25px;
+			transition: 0.3s ease;
+			box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+		}
+
+		.projeto:hover {
+			transform: translateY(-8px);
+			box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+		}
+
+		.projeto h3 {
+			margin-top: 0;
+			font-weight: 600;
+			font-size: 22px;
+			margin-bottom: 15px;
+		}
+
+		.img-projeto {
+			width: 100%;
+			border-radius: 12px;
+			margin-bottom: 15px;
+			transition: 0.3s;
+		}
+
+		.img-projeto:hover {
+			transform: scale(1.03);
+		}
+
+		.projeto p {
+			font-size: 14px;
+			line-height: 1.6;
+			color: #d1d5db;
+		}
+
+		.btn-ver-projeto {
+			display: inline-block;
+			margin-top: 15px;
+			padding: 10px 18px;
+			border-radius: 8px;
+			background: linear-gradient(45deg, #00c6ff, #0072ff);
+			color: #fff;
+			text-decoration: none;
+			font-weight: 500;
+			transition: 0.3s;
+		}
+
+		.btn-ver-projeto:hover {
+			background: linear-gradient(45deg, #0072ff, #00c6ff);
+			transform: scale(1.05);
+		}
+
+		footer {
+			text-align: center;
+			padding: 40px 0;
+			background: #0f172a;
+			border-top: 1px solid rgba(255,255,255,0.1);
+		}
+
+		.social-icons img {
+			margin-top: 15px;
+			transition: 0.3s;
+		}
+
+		.social-icons img:hover {
+			transform: scale(1.15);
+		}
+
+		@media (max-width: 768px) {
+			.projeto-container {
+				padding: 40px 5%;
+			}
+		}
+	</style>
 </head>
 
 <body>
@@ -58,19 +150,9 @@
 			</p>
 			<a href="https://futzone.app.br/index.html" target="_blank" class="btn-ver-projeto">Ver aplicativo</a>
 		</div>
-		
-		<div class="projeto">
-			<h3>HenGrandeEstilo Bubble</h3>
-			<img src="imagem/hengrandeestilo.png" alt="Hengrandeestilo" class="img-projeto">
-			<p>
-				Loja online de moda personalizada, com foco em estilo e inovação. Plataforma no-code construída no
-				Bubble com integração de pagamentos e painel de pedidos 
-			</p>
-			<a href="https://hengrandeestilo.com" target="_blank" class="btn-ver-projeto">Ver loja</a>
-		</div>
 
 		<div class="projeto">
-			<h3>HenGrandeEstilo NuvemShop</h3>
+			<h3>HenGrandeEstilo</h3>
 			<img src="imagem/hengrandeestilo.png" alt="Hengrandeestilo" class="img-projeto">
 			<p>
 				Versão otimizada da loja HenGrandeEstilo, criada na plataforma NuvemShop para oferecer uma experiência de compra rápida e moderna. 
@@ -91,15 +173,33 @@
 		</div>
 
 		<div class="projeto">
-			<h3>Suprimentos</h3>
-			<img src="imagem/suprimentos.png" alt="Sistema de Suprimentos" class="img-projeto">
-			<p>
-				Sistema de controle de compras, estoques e requisições internas. Integrações com bancos de dados Oracle
-				e processos automatizados via n8n.
-			</p>
-			<a href="https://agrocrm.com.br/produtos/pedido-de-vendas/" target="_blank" class="btn-ver-projeto">Ver
-				projeto</a>
-		</div>
+    <h3>Suprimentos</h3>
+    <img src="imagem/suprimentos.png" alt="Sistema de Suprimentos" class="img-projeto">
+    <p>
+        Plataforma completa de gestão empresarial voltada para suprimentos e logística. 
+        Inclui gestão de estoque e compras com integração a bancos de dados Oracle, 
+        controle de vendas e requisições internas, além de automação de processos via n8n. 
+        Possui gestão de rotas de entrega com cálculo da melhor rota e configuração visual estilo kanban, 
+        integração com aplicativo mobile para envio e recebimento de produtos via leitura de etiquetas, 
+        e controle de rotas internas na empresa indicando setores, horários e fluxo de coleta/entrega por robôs. 
+        Oferece monitoramento em tempo real das requisições, garantindo eficiência, rastreabilidade e 
+        uma experiência integrada entre sistema web e aplicativo.
+    </p>
+    <a href="https://nexus.kronospet.com.br/" target="_blank" class="btn-ver-projeto">Ver projeto</a>
+</div>
+
+<div class="projeto">
+    <h3>Suprimentos APP</h3>
+    <img src="imagem/suprimentos.png" alt="Sistema de Suprimentos" class="img-projeto">
+    <p>
+        Aplicativo mobile integrado ao Nexus Suprimentos, permitindo envio e recebimento de produtos 
+        com leitura de etiquetas, acompanhamento de rotas internas e externas, e visualização estilo kanban 
+        das requisições. O app mostra em tempo real o setor de origem da solicitação, o horário previsto 
+        para coleta e entrega, e o fluxo dos robôs responsáveis pela movimentação dos produtos. 
+        Com isso, garante maior agilidade, transparência e eficiência nos processos de suprimentos da empresa.
+    </p>
+    <a href="https://nexus.kronospet.com.br/appinvent.apk" target="_blank" class="btn-ver-projeto">Ver projeto</a>
+</div>
 
 	</section>
 
@@ -131,4 +231,5 @@
 
 
 </html>
+
 
